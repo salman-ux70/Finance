@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/card_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_20sdp"
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/recycler_view_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnSendRequest"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:background="@drawable/social_image_layer"
+            android:src="@drawable/send" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 Aug, 10:30 PM" />
+
+            <TextView
+                android:id="@+id/tvstateOFTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="You Send a payment"
+                android:textColor="@color/recent_transactions"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="+$55.00"
+            android:textColor="#FF7977"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_recieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_20sdp"
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/recycler_view_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_send">
+
+        <ImageView
+            android:id="@+id/btnRecRequest"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:background="@drawable/social_image_layer"
+            android:src="@drawable/receive" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDateTimeRec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 Aug, 10:30 PM" />
+
+            <TextView
+                android:id="@+id/tvstateOFTransferRec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="You Received a payment"
+                android:textColor="@color/recent_transactions"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="+$55.00"
+            android:textColor="#60C175"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

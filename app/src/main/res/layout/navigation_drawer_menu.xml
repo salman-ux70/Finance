@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/profileInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:elevation="@dimen/_12sdp"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_15sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/drawer_pf" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="Profile information"
+            android:textColor="@color/text_dont_have_code"
+            android:textSize="@dimen/_10ssp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_rightward" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contactSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:elevation="@dimen/_12sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_15sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/support" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="Contact Support"
+            android:textColor="@color/text_dont_have_code"
+            android:textSize="@dimen/_10ssp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_rightward" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:elevation="@dimen/_12sdp"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_15sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/document" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="Term and condition"
+            android:textColor="@color/text_dont_have_code"
+            android:textSize="@dimen/_10ssp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_rightward" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/privacyPolicymenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:elevation="@dimen/_12sdp"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_15sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/lock" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="Privacy Policy"
+            android:textColor="@color/text_dont_have_code"
+            android:textSize="@dimen/_10ssp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_rightward" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

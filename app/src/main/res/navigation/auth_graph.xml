@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.zat.finance.views.fragments.authFragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_OTPVerificationFragment"
+            app:destination="@id/OTPVerificationFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_setUpProfileFragment2"
+            app:destination="@id/setUpProfileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.zat.finance.views.fragments.authFragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+
+
+        <action
+            android:id="@+id/action_loginFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_setUpProfileFragment"
+            app:destination="@id/setUpProfileFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPVerificationFragment"
+        android:name="com.zat.finance.views.fragments.authFragments.OTPVerificationFragment"
+        android:label="fragment_o_t_p_verification"
+        tools:layout="@layout/fragment_o_t_p_verification" >
+        <action
+            android:id="@+id/action_OTPVerificationFragment_to_createNewPasswordFragment"
+            app:destination="@id/createNewPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.zat.finance.views.fragments.authFragments.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_OTPVerificationFragment"
+            app:destination="@id/OTPVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewPasswordFragment"
+        android:name="com.zat.finance.views.fragments.authFragments.CreateNewPasswordFragment"
+        android:label="fragment_create_new_password"
+        tools:layout="@layout/fragment_create_new_password" >
+        <action
+            android:id="@+id/action_createNewPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_createNewPasswordFragment_to_setUpProfileFragment"
+            app:destination="@id/setUpProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUpProfileFragment"
+        android:name="com.zat.finance.views.fragments.authFragments.SetUpProfileFragment"
+        android:label="fragment_set_up_profile"
+        tools:layout="@layout/fragment_set_up_profile" >
+        <action
+            android:id="@+id/action_setUpProfileFragment_to_chooseSubscriptionFragment"
+            app:destination="@id/chooseSubscriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseSubscriptionFragment"
+        android:name="com.zat.finance.views.fragments.authFragments.ChooseSubscriptionFragment"
+        android:label="fragment_choose_subscription"
+        tools:layout="@layout/fragment_choose_subscription" >
+        <action
+            android:id="@+id/action_chooseSubscriptionFragment_to_setUpProfileFragment"
+            app:destination="@id/setUpProfileFragment" />
+    </fragment>
+
+</navigation>

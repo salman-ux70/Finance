@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color"
+    android:fillViewport="true"
+    tools:context=".views.fragments.mainFragments.ManagePaymentFragment">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+  <View
+      android:id="@+id/view_bg"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:background="@drawable/background_image"
+      app:layout_constraintDimensionRatio="1:0.70"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintEnd_toStartOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+  </View>
+
+  <ImageView
+      android:id="@+id/paymentbackImage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20sdp"
+      android:src="@drawable/back_button_bag"
+      app:layout_constraintBottom_toBottomOf="@+id/choose_Payment_TV"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/choose_Payment_TV" />
+
+  <ImageView
+      android:id="@+id/backbutton_img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/btn_back"
+      app:layout_constraintBottom_toBottomOf="@+id/paymentbackImage"
+      app:layout_constraintEnd_toEndOf="@+id/paymentbackImage"
+      app:layout_constraintStart_toStartOf="@+id/paymentbackImage"
+      app:layout_constraintTop_toTopOf="@+id/paymentbackImage" />
+
+  <TextView
+      android:id="@+id/choose_Payment_TV"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/_20sdp"
+      android:fontFamily="@font/poppins_bold"
+      android:text="@string/paymne"
+      android:textColor="@color/white"
+      android:textSize="@dimen/_14ssp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <LinearLayout
+      android:id="@+id/Linear_bg"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginHorizontal="@dimen/_10sdp"
+      android:layout_marginTop="@dimen/_70sdp"
+      android:layout_marginBottom="@dimen/_10sdp"
+      android:background="@drawable/ic_background_shape"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+   <LinearLayout
+       android:id="@+id/Accounts_name_linear"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="@dimen/_18sdp"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/Choose_your_plan_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins"
+        android:text="@string/accounts"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <ImageView
+        android:id="@+id/three_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dots" />
+   </LinearLayout>
+
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_15sdp"
+       android:layout_marginHorizontal="@dimen/_15sdp"
+       android:background="@drawable/ic_background_shape"
+       android:elevation="1dp"
+       android:orientation="horizontal"
+       android:paddingVertical="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/Vissa_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/gradient_btn_bg"
+        android:padding="@dimen/_8sdp"
+        android:src="@drawable/visa_inc__logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MonthlyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/debit_card"
+        android:textColor="@color/black_text_colorr"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@+id/Vissa_image"
+        app:layout_constraintStart_toEndOf="@id/Vissa_image"
+        app:layout_constraintTop_toTopOf="@+id/Vissa_image" />
+
+    <TextView
+        android:id="@+id/vissaCardNumber_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_5435_1289"
+        android:textColor="@color/grey_text_colorr"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/Vissa_image"
+        app:layout_constraintStart_toEndOf="@id/Vissa_image"
+        app:layout_constraintTop_toBottomOf="@+id/Vissa_image" />
+
+    <ImageView
+        android:id="@+id/checkbox_vissa"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/payment_check_box_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="@dimen/_15sdp"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:background="@drawable/ic_background_shape"
+       android:elevation="1dp"
+       android:orientation="horizontal"
+       android:paddingVertical="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/master_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@drawable/ic_background_shape"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/mastercard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/creditTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/credit_card"
+        android:textColor="@color/black_text_colorr"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@+id/master_image"
+        app:layout_constraintStart_toEndOf="@id/master_image"
+        app:layout_constraintTop_toTopOf="@+id/master_image" />
+
+    <TextView
+        android:id="@+id/masterCardNumber_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_5435_1289"
+        android:textColor="@color/grey_text_colorr"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/master_image"
+        app:layout_constraintStart_toEndOf="@id/master_image"
+        app:layout_constraintTop_toBottomOf="@+id/master_image" />
+
+    <ImageView
+        android:id="@+id/checkbox_master"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/payment_check_box_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="@dimen/_15sdp"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:background="@drawable/ic_background_shape"
+       android:elevation="1dp"
+       android:orientation="horizontal"
+       android:paddingVertical="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/paypall_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/profile_bg_shape"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/paypal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/paypallTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/paypal"
+        android:textColor="@color/black_text_colorr"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@+id/paypall_image"
+        app:layout_constraintStart_toEndOf="@id/paypall_image"
+        app:layout_constraintTop_toTopOf="@+id/paypall_image" />
+
+    <TextView
+        android:id="@+id/paypalCardNumber_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_5435_1289"
+        android:textColor="@color/grey_text_colorr"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/paypall_image"
+        app:layout_constraintStart_toEndOf="@id/paypall_image"
+        app:layout_constraintTop_toBottomOf="@+id/paypall_image" />
+
+    <ImageView
+        android:id="@+id/checkbox_paypall"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/payment_check_box_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="horizontal"
+       android:paddingBottom="@dimen/_40sdp"
+   >
+
+    <TextView
+        android:id="@+id/AddnewTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@drawable/ic_doted_border"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingHorizontal="@dimen/_70sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="@string/add_new"
+        android:textColor="@color/statu_bar" />
+
+    <ImageView
+        android:id="@+id/scan_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:src="@drawable/bar_scan" />
+
+   </LinearLayout>
+  </LinearLayout>
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/popup_menu_payment"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_130sdp"
+      android:layout_marginTop="@dimen/_40sdp"
+      android:layout_marginEnd="@dimen/_25sdp"
+      android:background="@drawable/ic_background_shape"
+      android:paddingVertical="@dimen/_4sdp"
+      android:visibility="gone"
+      app:layout_constraintEnd_toEndOf="@id/Linear_bg"
+      app:layout_constraintStart_toStartOf="@id/Linear_bg"
+      app:layout_constraintTop_toTopOf="@id/Linear_bg">
+
+
+   <TextView
+       android:id="@+id/delete_method_tv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_8sdp"
+       android:drawableStart="@drawable/delete"
+       android:gravity="center"
+       android:drawablePadding="@dimen/_10sdp"
+       android:fontFamily="@font/poppins"
+       android:text="Delete Method"
+       android:textColor="@color/red_color"
+       android:textSize="@dimen/_12ssp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

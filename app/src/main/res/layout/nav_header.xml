@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_image">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:srcCompat="@drawable/profile_image"
+        android:scaleType="fitXY"
+        app:shapeAppearanceOverlay="@style/shape_able_image"
+        android:layout_marginTop="@dimen/_40sdp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Michael Angelo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/poppins"
+        android:padding="@dimen/_5sdp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Michael@gmil.com"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/poppins"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@color/layout_background_color"
+    tools:context=".views.fragments.authFragments.ChooseSubscriptionFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <View
+            android:id="@+id/layoutRelative"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:background="@drawable/background_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </View>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/choose_subscription"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_drawer"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/back_button_bag"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_18sdp"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+        <ImageView
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:src="@drawable/btn_back"
+            app:layout_constraintTop_toTopOf="@id/btn_drawer"
+            app:layout_constraintBottom_toBottomOf="@id/btn_drawer"
+            app:layout_constraintStart_toStartOf="@id/btn_drawer"
+            app:layout_constraintEnd_toEndOf="@id/btn_drawer"
+            />
+
+        <LinearLayout
+            android:id="@+id/Linear_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/view_background"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                >
+               <ImageView
+                   android:layout_width="@dimen/_25sdp"
+                   android:layout_height="@dimen/_25sdp"
+                   android:src="@drawable/tick"
+                   />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unlocked_all_access"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    style="@style/checkBoxTextColor"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_8sdp"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/tick"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_ads"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    style="@style/checkBoxTextColor"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Your Plan"
+                android:textColor="@color/textBoldColor"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/choose_subscription"
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/chechBox"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:contentDescription="checkbox"
+                        android:src="@drawable/check_box_selector_two"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        />
+                    <TextView
+                        android:id="@+id/tvmonthly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        app:layout_constraintTop_toTopOf="@id/chechBox"
+                        app:layout_constraintBottom_toTopOf="@id/chechBox"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="#002251"                        app:layout_constraintStart_toEndOf="@id/chechBox"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Monthly" />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="$9,99 per month"
+                         app:layout_constraintTop_toBottomOf="@id/tvmonthly"
+                         app:layout_constraintStart_toEndOf="@id/chechBox"
+                         android:layout_marginStart="@dimen/_10sdp"
+                         android:textColor="@color/checkboxTextcolor"
+                         android:layout_marginTop="@dimen/_2sdp"
+                         />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/choose_subscription"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/checkBoxYearly"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/check_box_selector_two"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        />
+                    <TextView
+                        android:id="@+id/tvYearly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        app:layout_constraintTop_toTopOf="@id/checkBoxYearly"
+                        app:layout_constraintBottom_toTopOf="@id/checkBoxYearly"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="#002251"
+                        app:layout_constraintStart_toEndOf="@id/checkBoxYearly"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Yearly" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$49,99 per year"
+                        app:layout_constraintTop_toBottomOf="@id/tvYearly"
+                        app:layout_constraintStart_toEndOf="@id/checkBoxYearly"
+                        android:layout_marginStart="@dimen/_10sdp"
+
+                        android:layout_marginTop="@dimen/_2sdp"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/choose_subscription"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/chechBoxweekly"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:contentDescription="@string/checkbox"
+                        android:src="@drawable/check_box_selector_two"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        />
+                    <TextView
+                        android:id="@+id/tvweekly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        app:layout_constraintTop_toTopOf="@id/chechBoxweekly"
+                        app:layout_constraintBottom_toTopOf="@id/chechBoxweekly"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/textBoldColor"
+                        app:layout_constraintStart_toEndOf="@id/chechBoxweekly"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/_7_days_free_trial_then" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$49.99 per Year"
+                        app:layout_constraintTop_toBottomOf="@id/tvweekly"
+                        app:layout_constraintStart_toEndOf="@id/chechBoxweekly"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textColor="@color/checkboxTextcolor"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:paddingBottom="@dimen/_10sdp"
+               >
+               <TextView
+                   android:id="@+id/btnSave"
+                   style="@style/buttonstyle"
+                  android:layout_gravity="bottom"
+                   android:text="@string/buy" />
+           </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>
